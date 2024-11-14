@@ -132,10 +132,6 @@ if(CONFIG_COVERAGE_ALL)
   add_compile_options(-fprofile-generate -ftest-coverage)
 endif()
 
-if(CONFIG_PROFILE_ALL)
-  add_compile_options(-pg)
-endif()
-
 if(CONFIG_MM_UBSAN_ALL)
   add_compile_options(${CONFIG_MM_UBSAN_OPTION})
 endif()
